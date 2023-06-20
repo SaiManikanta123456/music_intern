@@ -1,7 +1,7 @@
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
-const apiKey = "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";
+const apiKey = "";
 
 const userMessages=[];
 const context = [
@@ -143,7 +143,7 @@ form.addEventListener("submit", async (e) => {
   // console.log("User Messages:", userMessages);
 
   messages.innerHTML += `<div class="message bot-message">
-  <img src="chat_bot.jpg" alt="bot icon"> <span>${chatbotResponse}</span>
+  <img src="/workspace/music_intern/chat_bot.jpg" alt="bot icon"> <span>${chatbotResponse}</span>
   </div>`;
   messages.scrollTop=messages.scrollHeight;
 
