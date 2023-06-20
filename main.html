@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/workspace/Intern_Spotipy/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/workspace/Intern_Spotipy/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/workspace/Intern_Spotipy/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <title>MUSIC IS EVERYWHERE AND EVERYTHING</title>
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #f7efe5;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+      height: 100vh;
+    }
+
+    #top-bar {
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
+
+    #side-bar {
+      grid-column: 1;
+      grid-row: 2 / -1;
+    }
+
+    #chat-bot {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="top-bar">
+      <!-- Include the content for the top bar here -->
+      {% include "top_bar.html" %}
+    </div>
+
+    <div id="side-bar">
+      <!-- Include the content for the sidebar here -->
+      {% include "side_bar.html" %}
+    </div>
+
+    <div id="chat-bot">
+      <!-- Include the content for the chat bot here -->
+      {% include "chat_bot.html" %}
+    </div>
+  </div>
+</body>
+</html>
